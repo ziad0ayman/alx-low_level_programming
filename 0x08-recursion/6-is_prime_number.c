@@ -23,9 +23,9 @@ int is_prime_number(int n)
  */
 int prime(int n, int a)
 {
-	if (n % a == 0)
-		return (0);
-	prime(n, a - 1);
 	if (a == 1)
 		return (1);
+	if (n % a == 0)
+		return (0);
+	return (prime(n, a - 1));
 }
