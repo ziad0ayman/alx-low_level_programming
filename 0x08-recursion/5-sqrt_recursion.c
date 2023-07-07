@@ -23,7 +23,7 @@ int _sqrt_recursion(int n)
 int haha(int n, int i)
 {
 	if ((i * i) > n)
-		return(-1);
+		return (-1);
 	if ((i * i) == n)
 		return (i);
 	return (haha(n, i + 1));
